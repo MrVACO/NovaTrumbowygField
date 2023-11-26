@@ -19,17 +19,12 @@ class NovaTrumbowygField extends Field
         
         $this->hideFromIndex();
         
-        $this->options([
-            'resetCss'           => true,
-            'removeFormatPasted' => true,
-            'lang'               => app()->getLocale()
-        ]);
-    }
-    
-    public function options(array $options = []): NovaTrumbowygField
-    {
-        return $this->withMeta([
-            'options' => $options
+        $this->withMeta([
+            'options' => [
+                'resetCss'           => true,
+                'removeFormatPasted' => true,
+                'lang'               => app()->getLocale()
+            ]
         ]);
     }
     
