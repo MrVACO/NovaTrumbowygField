@@ -9,7 +9,11 @@
 - [Trumbowyg WYSIWYG editor](https://github.com/Alex-D/Trumbowyg) - непосредственно сам редактор
 - [Vue.js component for Trumbowyg WYSIWYG editor](https://github.com/ankurk91/vue-trumbowyg) - обвязка для использования с Vue JS
 
+Для переключения локализаций можете использовать [Language Switch](https://github.com/badinansoft/nova-language-switch)
+
 ## Как использовать в своем компоненте
+
+Язык определяется автоматически - `app()->getLocale()`
 
 ```php
 use MrVaco\NovaTrumbowygField\NovaTrumbowygField;

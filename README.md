@@ -1,5 +1,7 @@
 ![Laravel Nova Trumbowyg Field](https://preview.dragon-code.pro/Laravel%20Nova/Trumbowyg%20Field.svg?preposition=for&pretty-title=0&github%5Brepository%5D=MrVACO%2FNovaTrumbowygField&mode=auto)
 
+> [RU readme](./README.RU.md)
+
 # Trumbowyg (WYSIWYG editor) with localization!
 
 This component adds the ability to use WYSIWYG fields instead of standard Textarea or Trix fields.
@@ -9,7 +11,11 @@ Component Base:
 - [Trumbowyg WYSIWYG editor](https://github.com/Alex-D/Trumbowyg) - the editor himself
 - [Vue.js component for Trumbowyg WYSIWYG editor](https://github.com/ankurk91/vue-trumbowyg) - binding for use with Vue JS
 
+To switch localizations you can use [Language Switch](https://github.com/badinansoft/nova-language-switch)
+
 ## How to use it in your component
+
+Language is detected automatically - `app()->getLocale()`
 
 ```php
 use MrVaco\NovaTrumbowygField\NovaTrumbowygField;
