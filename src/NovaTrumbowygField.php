@@ -2,7 +2,6 @@
 
 namespace MrVaco\NovaTrumbowygField;
 
-use Illuminate\Support\Facades\Config;
 use Laravel\Nova\Fields\Expandable;
 use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Fields\SupportsDependentFields;
@@ -23,7 +22,7 @@ class NovaTrumbowygField extends Field
         $this->options([
             'resetCss'           => true,
             'removeFormatPasted' => true,
-            'lang'               => Config::get('app.locale')
+            'lang'               => app()->getLocale()
         ]);
     }
     

@@ -12,7 +12,9 @@ class FieldServiceProvider extends ServiceProvider
     {
         Nova::serving(function(ServingNova $event)
         {
-            Nova::script('nova-trumbowyg-field', __DIR__ . '/../dist/js/field.js');
+            $locale = app()->getLocale();
+            
+            Nova::script('nova-trumbowyg-field-' . $locale, __DIR__ . '/../dist/js/field.' . $locale . '.js');
             Nova::style('nova-trumbowyg-field', __DIR__ . '/../dist/css/field.css');
         });
     }
