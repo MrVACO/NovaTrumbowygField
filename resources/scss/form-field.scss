@@ -1,0 +1,63 @@
+$color: rgba(var(--colors-gray-500)) !important;
+$color-dark: rgba(var(--colors-gray-400)) !important;
+
+$background: rgba(var(--colors-gray-100)) !important;
+$background-dark: rgba(var(--colors-gray-700)) !important;
+
+$background-editor-dark: rgba(var(--colors-gray-900)) !important;
+
+.trumbowyg {
+    .trumbowyg-button-pane {
+        color: $color;
+        background: $background;
+        border: 0;
+    }
+    
+    .trumbowyg-editor-box {
+        color: $color;
+        
+        .trumbowyg-editor {
+            min-height: 300px;
+            color: $color;
+            border: 1px solid $background;
+            
+            h1, h2, h3, h4, blockquote {
+                color: $color;
+            }
+        }
+    }
+}
+
+.trumbowyg-dark {
+    .trumbowyg-box {
+        svg {
+            fill: $color-dark;
+        }
+    }
+    
+    .trumbowyg {
+        .trumbowyg-button-pane {
+            color: $color-dark;
+            background: $background-dark;
+            
+            .trumbowyg-button-group:not(:empty)::after {
+                background-color: $background-editor-dark;
+            }
+        }
+        
+        .trumbowyg-editor-box {
+            color: $color-dark;
+            
+            .trumbowyg-editor {
+                min-height: 300px;
+                color: $color-dark;
+                border: 1px solid $background-editor-dark;
+                background-color: $background-editor-dark;
+                
+                h1, h2, h3, h4, blockquote {
+                    color: $color-dark;
+                }
+            }
+        }
+    }
+}
