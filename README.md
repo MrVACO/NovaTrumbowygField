@@ -13,6 +13,12 @@ Component Base:
 
 To switch localizations you can use [Language Switch](https://github.com/badinansoft/nova-language-switch)
 
+## Install
+
+```
+composer require mr-vaco/nova-trumbowyg-field
+```
+
 ## How to use it in your component
 
 Language is detected automatically - `app()->getLocale()`

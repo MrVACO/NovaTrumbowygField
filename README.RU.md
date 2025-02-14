@@ -11,6 +11,12 @@
 
 Для переключения локализаций можете использовать [Language Switch](https://github.com/badinansoft/nova-language-switch)
 
+## Установка
+
+```
+composer require mr-vaco/nova-trumbowyg-field
+```
+
 ## Как использовать в своем компоненте
 
 Язык определяется автоматически - `app()->getLocale()`
