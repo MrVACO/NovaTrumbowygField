@@ -19,8 +19,15 @@ jobs:
 
             -   name: Update banner
                 uses: TheDragonCode/github-preview-updater@v2
+                id: preview1
                 with:
                     token: ${{ secrets.GITHUB_TOKEN }}
+
+            -   name: Merge PR
+                if: steps.preview1.outputs.pullRequestNumber != ''
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                run: gh pr merge --merge --delete-branch ${{ steps.preview1.outputs.pullRequestNumber }}
 
     ru:
         runs-on: ubuntu-latest
@@ -32,7 +39,13 @@ jobs:
 
             -   name: Update banner
                 uses: TheDragonCode/github-preview-updater@v2
+                id: preview2
                 with:
                     token: ${{ secrets.GITHUB_TOKEN }}
                     readme: 'README.RU.md'
-                    config: '.github/preview-updater-ru.yml'
+
+            -   name: Merge PR
+                if: steps.preview2.outputs.pullRequestNumber != ''
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                run: gh pr merge --merge --delete-branch ${{ steps.preview2.outputs.pullRequestNumber }}
