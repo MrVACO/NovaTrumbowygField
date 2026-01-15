@@ -10,7 +10,17 @@ permissions:
 
 jobs:
     main:
-        uses: TheDragonCode/.github/.github/workflows/preview.yml@main
+        runs-on: ubuntu-latest
+
+        steps:
+            -   uses: actions/checkout@v6
+                with:
+                    fetch-depth: 0
+
+            -   name: Update banner
+                uses: TheDragonCode/github-preview-updater@v2
+                with:
+                    token: ${{ secrets.GITHUB_TOKEN }}
 
     ru:
         runs-on: ubuntu-latest
@@ -23,5 +33,6 @@ jobs:
             -   name: Update banner
                 uses: TheDragonCode/github-preview-updater@v2
                 with:
+                    token: ${{ secrets.GITHUB_TOKEN }}
                     readme: 'README.RU.md'
                     config: '.github/preview-updater-ru.yml'
