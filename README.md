@@ -1,8 +1,8 @@
 # Nova Trumbowyg Field
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://banners.beyondco.de/Novatrumbowygfield.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&theme=dark&packageManager=composer+require&packageName=mr-vaco%2Fnova-trumbowyg-field&description=Trumbowyg+WYSIWYG+editor&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg">
-    <img src="https://banners.beyondco.de/Novatrumbowygfield.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&theme=light&packageManager=composer+require&packageName=mr-vaco%2Fnova-trumbowyg-field&description=Trumbowyg+WYSIWYG+editor&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg" alt="Novatrumbowygfield">
+    <source media="(prefers-color-scheme: dark)" srcset="https://banners.beyondco.de/Nova%20Trumbowyg%20Field.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&theme=dark&packageManager=composer+require&packageName=mr-vaco%2Fnova-trumbowyg-field&description=Trumbowyg+WYSIWYG+editor&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg">
+    <img src="https://banners.beyondco.de/Nova%20Trumbowyg%20Field.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&theme=light&packageManager=composer+require&packageName=mr-vaco%2Fnova-trumbowyg-field&description=Trumbowyg+WYSIWYG+editor&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg" alt="Nova Trumbowyg Field">
 </picture>
 
 > [RU readme](./README.RU.md)
