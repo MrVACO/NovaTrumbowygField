@@ -10,5 +10,10 @@ permissions:
     pull-requests: write
 
 jobs:
-    preview:
+    main:
         uses: TheDragonCode/.github/.github/workflows/preview.yml@main
+
+    ru:
+        uses: TheDragonCode/.github/.github/workflows/preview.yml@main
+        with:
+            config: .github/preview-updater-ru.yml
