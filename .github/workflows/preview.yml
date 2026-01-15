@@ -1,8 +1,7 @@
+# .github/workflows/preview.yml
 name: Preview Updater
 
 on:
-    schedule:
-        -   cron: '20 2 * * *'
     workflow_dispatch:
 
 permissions:
@@ -11,17 +10,8 @@ permissions:
 
 jobs:
     main:
-        runs-on: ubuntu-latest
+        uses: TheDragonCode/.github/.github/workflows/preview.yml@main
 
-        steps:
-            -   uses: actions/checkout@v6
-                with:
-                    fetch-depth: 0
-
-            -   name: Update banner
-                uses: TheDragonCode/github-preview-updater@v2
-                with:
-                    token: ${{ secrets.GITHUB_TOKEN }}
     ru:
         runs-on: ubuntu-latest
 
@@ -33,5 +23,5 @@ jobs:
             -   name: Update banner
                 uses: TheDragonCode/github-preview-updater@v2
                 with:
-                    token: ${{ secrets.GITHUB_TOKEN }}
+                    readme: 'README.RU.md'
                     config: '.github/preview-updater-ru.yml'
